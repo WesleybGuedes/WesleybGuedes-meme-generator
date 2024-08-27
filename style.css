@@ -13,11 +13,12 @@ body {
 }
 
 #meme-image-container {
+  background-color: white;
   display: flex;
   justify-content: center;
   height: 80vh;
   width: 200vh;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 #meme-text {
