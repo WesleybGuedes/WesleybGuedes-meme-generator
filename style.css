@@ -3,3 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#meme-image-container {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 200vh;
+  border: 2px solid black;
+}
+
+#meme-text {
+  position: absolute;
+  bottom: 10%;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+input {
+  width: 30%;
+  margin: 10px 0;
+}
