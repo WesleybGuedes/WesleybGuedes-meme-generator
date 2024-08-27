@@ -24,9 +24,9 @@ body {
 #meme-text {
   position: absolute;
   bottom: 10%;
-  font-size: 3em;
+  font-size: 30px;
   color: white;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 5px 5px 5px black;
   text-align: center;
 }
 
