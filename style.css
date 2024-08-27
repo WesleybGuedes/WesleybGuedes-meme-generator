@@ -16,14 +16,20 @@ body {
   background-color: white;
   display: flex;
   justify-content: center;
-  height: 80vh;
-  width: 200vh;
+  width: max-content;
+  height: 500px;
   border: 1px solid black;
 }
 
+#meme-image {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 #meme-text {
+  display: flex;
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
