@@ -6,7 +6,11 @@ const fireButton = document.getElementById('fire');
 const waterButton = document.getElementById('water');
 const earthButton = document.getElementById('earth');
 const memeContainer = document.getElementById('meme-image-container');
-
+const memes = document.querySelectorAll('.memes'); // NodeList
+// utilizado o querySelectorAll para selecionar todos os elementos
+// com a classe memes em uma NodeList, pois o forEach só pode ser
+// utilizado em NodeList e o getElementsByClassName retorna um HTMLCollection
+// que não é possível utilizar o forEach. E precisaria usar Array.from() para resolver.
 inputText.addEventListener('input', () => {
   memeText.innerText = inputText.value;
 });
@@ -25,4 +29,10 @@ waterButton.addEventListener('click', () => {
 
 earthButton.addEventListener('click', () => {
   memeContainer.style.border = '6px groove green';
+});
+
+memes.forEach((element) => {
+  element.addEventListener('click', (event) => {
+    memeImage.src = event.target.src;
+  });
 });
